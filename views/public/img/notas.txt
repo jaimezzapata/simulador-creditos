@@ -20,3 +20,6 @@ Arreglos: Conjundo de datos almacenados en una misma variable
     Tamaño -> Está definidio con la cantidad de elementos que contiene el arreglo
     Posición -> Está definida por la cantidad de elementos - 1
 Un arrego el JavaScript puede almacenar cualquier tipo de información o dato: numero, textos, booleanod, funciones, objetos y arreglos
+
+Consulta: 
+Métodos de los arreglos: map, find, filter, some, forEach, push, pop, slice
