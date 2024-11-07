@@ -1,37 +1,6 @@
-// function Persona(nombre, edad, estatura, color) {
-//     this.nombre = nombre
-//     this.edad = edad
-//     this.estatura = estatura
-//     this.color = color
-//     this.moverse = function (nombre) {
-//         this.nombre = nombre
-//         console.log(nombre + ' Se movió')
-//     }
-//     this.expresarse = function () {
-//         console.log('Se expresó...')
-//     }
-// }
-// let personaUno = new Persona('Laura', 18, 1.55, 'Blanco')
-// let personaDos = new Persona('Daniel', 18, 1.74, 'Blanco')
-// let personaTres = new Persona('Anyis', 18, 1.60, 'Blanco')
-// personaUno.moverse()
-// personaDos.moverse()
-// personaTres.moverse()
-// console.log(personaUno, personaDos, personaTres)
+import { expresionesRegulares } from "../../../helpers/expresiones.js";
 
-// let persona = {
-//     nombre: 'Juan Felipe',
-//     apellido: 'Niño',
-//     edad: 19,
-//     moverse: function () {
-//         console.log('Se esta moviendo...')
-//     },
-//     direccion: {
-//         calle: 23,
-//         carrera: 23,
-//         interior: 20
-//     }
-// }
+// console.log(expresionesRegulares.nombre);
 
 document
   .querySelector("#btnFormRegistro")
@@ -48,9 +17,14 @@ for (let index = 0; index < inputs.length; index++) {
   inputs[index].addEventListener("keyup", validarFormulario);
 }
 function validarFormulario(e) {
+  //   console.log(e);
   switch (e.target.name) {
-    case "login-usuario":
-      console.log("Este es el input de login usuario");
+    case "register-nombre":
+      if (expresionesRegulares.nombre.test(e.target.value)) {
+        console.log("Pasó la validación");
+      } else {
+        console.log("El campo solo permite letras en mayúscula");
+      }
       break;
 
     default:
