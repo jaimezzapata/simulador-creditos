@@ -90,7 +90,7 @@ body {
     width: 40%;
     display: inherit;
     align-items: inherit;
-    justify-content: inherit;
+    justify-content: space-between;
     backdrop-filter: blur(10px);
     border: solid 1px white;
     box-shadow: 5px 5px 2px black;
