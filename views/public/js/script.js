@@ -21,9 +21,11 @@ function validarFormulario(e) {
   switch (e.target.name) {
     case "register-nombre":
       if (expresionesRegulares.nombre.test(e.target.value)) {
-        console.log("Pasó la validación");
+        document.getElementById("register-nombre").classList.add("correcto");
+        document.getElementById("register-nombre").classList.remove("incorrecto");
       } else {
-        console.log("El campo solo permite letras en mayúscula");
+        document.getElementById("register-nombre").classList.add("incorrecto");
+        document.getElementById("register-nombre").classList.remove("correcto");
       }
       break;
 
