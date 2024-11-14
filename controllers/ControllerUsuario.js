@@ -1,7 +1,15 @@
 import { usuarios } from "../models/ModelUsuario.js";
 
 export function login() {
+  let loginUsuario = document.getElementById("login-usuario").value;
+  let loginContrasena = document.getElementById("login-contrasena").value;
   console.log(usuarios);
+  usuarios.some(function (index) {
+    // console.log(index)
+    if (loginUsuario == index.usuario && loginContrasena == index.contrasena) {
+      window.location.href = "/views/pages/viewCredito.html";
+    }
+  });
 }
 
 export function register() {
@@ -17,6 +25,21 @@ export function register() {
     contrasena: registroContrasena,
     confirmar: registroConfirmar,
   };
-  usuarios.push(newRegistro)
+  usuarios.unshift(newRegistro);
+  document.getElementById("form-register").style.display = "none";
+  document.getElementById("form-login").style.display = "flex";
   console.log(usuarios);
 }
+
+// let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(numeros)
+// numeros.pop()
+// console.log(numeros)
+// numeros.pop()
+// console.log(numeros)
+// numeros.shift()
+// console.log(numeros)
+// numeros.shift()
+// console.log(numeros)
+// numeros.shift()
+// console.log(numeros)
