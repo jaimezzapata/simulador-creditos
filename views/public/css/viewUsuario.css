@@ -35,6 +35,9 @@ form {
 
 form div {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 form label {
@@ -92,3 +95,4 @@ form p {
 form p:hover {
   color: #a985ea;
 }
+
