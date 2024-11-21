@@ -74,6 +74,7 @@ function validarFormulario(e) {
         document
           .getElementById("register-contrasena")
           .classList.remove("correcto");
+          
       }
       break;
     case "register-confirmar":
