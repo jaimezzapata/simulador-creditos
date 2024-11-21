@@ -41,8 +41,6 @@ function validarFormulario(e) {
         document
           .getElementById("register-usuario")
           .classList.remove("incorrecto");
-        document.getElementById("mensaje-nombre").textContent =
-          "El nombre solo permite mayúsculas";
       } else {
         document.getElementById("register-usuario").classList.add("incorrecto");
         document
@@ -76,6 +74,7 @@ function validarFormulario(e) {
         document
           .getElementById("register-contrasena")
           .classList.remove("correcto");
+          
       }
       break;
     case "register-confirmar":

@@ -7,12 +7,11 @@
   font-family: "Roboto Mono", monospace;
 }
 
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to bottom, #001f3f, #005f99, #007bff);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -20,6 +19,7 @@ body {
   min-height: 100vh;
 }
 
+/* Estilos generales de los formularios */
 form {
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ form {
   transition: all 0.3s ease-in-out;
 }
 
-
+/* Input fields */
 form div {
   margin-bottom: 15px;
 }
@@ -42,7 +42,7 @@ form label {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #f0f8ff;
+  color: #cce7ff;
 }
 
 form input {
@@ -50,23 +50,23 @@ form input {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #e0dede;
+  background: #e3f2fd;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
 }
 
 form input:focus {
-  background: #f0f8ff;
-  color: #573b8a;
-  box-shadow: 0 0 5px #573b8a;
+  background: #cce7ff;
+  color: #005f99;
+  box-shadow: 0 0 5px #005f99;
 }
 
 /* Botones */
 form button {
   width: 100%;
   padding: 10px;
-  background: #573b8a;
+  background: #005f99;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -77,18 +77,24 @@ form button {
 }
 
 form button:hover {
-  background: #6d44b8;
+  background: #007bff;
 }
 
+/* Textos de cambio de formulario */
 form p {
   margin-top: 15px;
   font-size: 0.9rem;
-  color: #f0f8ff;
+  color: #cce7ff;
   cursor: pointer;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 form p:hover {
-  color: #a985ea;
+  color: #80d4ff;
+}
+
+
+.incorrecto{
+  border: solid 2px red;
 }
