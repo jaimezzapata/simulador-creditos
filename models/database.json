@@ -8,6 +8,22 @@
       "confirmar": "Jaime1Z*",
       "usuario": "jaime",
       "id": "adf8798ad"
+    },
+    {
+      "id": "adfadsf879",
+      "nombre": "LAURA BEDOYA",
+      "correo": "laura@correo.com",
+      "contrasena": "Laura1Z*",
+      "confirmar": "Laura1Z*",
+      "usuario": "laura"
+    },
+    {
+      "id": "96d1",
+      "nombre": "JUAN DIEGO",
+      "usuario": "juan",
+      "correo": "juandiego@gmail.com",
+      "contrasena": "JuanD1*",
+      "confirmar": "JuanD1*"
     }
   ]
 }

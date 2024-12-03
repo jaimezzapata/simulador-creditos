@@ -67,10 +67,18 @@ export function register() {
     contrasena: registroContrasena,
     confirmar: registroConfirmar,
   };
-  usuarios.unshift(newRegistro);
+  // usuarios.unshift(newRegistro);
   document.getElementById("form-register").style.display = "none";
   document.getElementById("form-login").style.display = "flex";
-  console.log(usuarios);
+  agregarUsuario(newRegistro);
+}
+
+function agregarUsuario(newRegistro) {
+  console.log(newRegistro);
+  fetch(urlUsuarios, {
+    method: "POST",
+    body: JSON.stringify(newRegistro),
+  });
 }
 
 // let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
