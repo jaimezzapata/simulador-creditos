@@ -24,6 +24,14 @@
       "correo": "juandiego@gmail.com",
       "contrasena": "JuanD1*",
       "confirmar": "JuanD1*"
+    },
+    {
+      "id": "6e0c",
+      "nombre": "",
+      "usuario": "",
+      "correo": "",
+      "contrasena": "",
+      "confirmar": ""
     }
   ]
 }
