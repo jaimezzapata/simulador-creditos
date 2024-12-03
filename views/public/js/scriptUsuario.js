@@ -1,4 +1,4 @@
-import { login, register } from "../../../controllers/ControllerUsuario.js";
+import { login, register, agregarUsuario } from "../../../controllers/ControllerUsuario.js";
 
-document.getElementById("btnRegistrar").addEventListener("click", register);
+document.getElementById("btnRegistrar").addEventListener("click", agregarUsuario);
 document.getElementById("btnLogin").addEventListener("click", login);

@@ -70,16 +70,18 @@ export function register() {
   // usuarios.unshift(newRegistro);
   document.getElementById("form-register").style.display = "none";
   document.getElementById("form-login").style.display = "flex";
-  agregarUsuario(newRegistro);
+  return newRegistro;
 }
 
-function agregarUsuario(newRegistro) {
+
+export function agregarUsuario() {
   console.log(newRegistro);
   fetch(urlUsuarios, {
     method: "POST",
-    body: JSON.stringify(newRegistro),
+    body: JSON.stringify(register()),
   });
 }
+
 
 // let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // console.log(numeros)
