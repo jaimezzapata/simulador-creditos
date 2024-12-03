@@ -1,0 +1,13 @@
+{
+  "modelCredito": [],
+  "modelUsuario": [
+    {
+      "nombre": "JAIME ZAPATA",
+      "correo": "correo@correo.com",
+      "contrasena": "Jaime1Z*",
+      "confirmar": "Jaime1Z*",
+      "usuario": "jaime",
+      "id": "adf8798ad"
+    }
+  ]
+}
