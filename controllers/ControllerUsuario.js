@@ -1,4 +1,17 @@
 let urlUsuarios = "http://localhost:3000/modelUsuario";
+let usuarios = [];
+
+function getUsuarios() {
+  fetch(urlUsuarios)
+    .then((response) => response.json())
+    .then((data) => {
+      usuarios = data;
+      console.log(usuarios);
+    })
+    .catch((error) => console.log(error));
+}
+
+getUsuarios();
 
 export function login() {
   let loginUsuario = document.getElementById("login-usuario").value;
