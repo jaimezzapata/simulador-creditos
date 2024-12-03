@@ -1,4 +1,4 @@
-import { usuarios } from "../models/ModelUsuario.js";
+let urlUsuarios = "http://localhost:3000/modelUsuario";
 
 export function login() {
   let loginUsuario = document.getElementById("login-usuario").value;
